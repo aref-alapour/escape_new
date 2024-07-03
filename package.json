@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@xpd/tailwind-3dtransforms": "^1.0.3",
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/main.css --minify --watch"
+  },
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss-animation-delay": "^1.2.0"
+  }
+}

@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 100;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Thin.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Light.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-ExtraBold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Black.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
+    font-display: swap;
+  }
+  * {
+    @apply font-YekanBakh;
+  }
+  img {
+    @apply w-full h-auto;
+  }
+  body {
+    line-height:  1.7;
+  }
+}
+
+@layer components {
+  .show-case {
+    background-image: url("../images/showcase-sm.jpg");
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    .show-case {
+      background-image: url("../images/showcase-lg.jpg");
+      height: 600px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 30px;
+    }
+  }
+}
